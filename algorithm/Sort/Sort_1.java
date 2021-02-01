@@ -3,6 +3,7 @@ public class Sort_1 {
 	
 	public void selectionSort(int[] arr) {
 		selectionSort(arr, arr.length);
+		
 	}
 	
 	
@@ -24,6 +25,7 @@ public class Sort_1 {
 	// 삽입정렬
 	public void insertionSort(int[] arr) {
 		insertionSort(arr, arr.length);
+	
 	}
 	
 	private void insertionSort(int[] arr, int size) {
@@ -60,10 +62,21 @@ public class Sort_1 {
 	}
 	
 	
+	// 배열 원소 출력
+	public void print(int[] arr) {
+		for(int i=0; i<arr.length; i++)
+			System.out.print(arr[i] + " ");
+		System.out.println();
+	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
+		int[] arr = new int[] {2, 5, 4, 1, 9, 8, 7, 6, 3, 0};
+		Sort_1 sort = new Sort_1();
+		sort.print(arr);
+		sort.selectionSort(arr);
+		sort.print(arr);
 	}
+		
 
 }
